@@ -1,22 +1,25 @@
+
     
-function primecheck(num){
-
-
-
+function primecheck(num)
     let count=0;
 for(let i=1;i<=num;i++){
     if(num%i==0){
       count++;
     }
   }
-if(count==2){
-  return true;
+if(count==2)
+{
+ return true;
 }
-  
 return false;
 }
-let ans=primecheck(13);
-if(ans==true){
-console.log("prime");
-}else{
-console.log("not prime);
+let bag=primeno(13)
+if(bag==true)
+{
+	console.log("prime no");
+}
+else
+{
+ console.log("not a prime no")
+} 
+
