@@ -1,17 +1,22 @@
-    let num=17;
+    
+function primecheck(num){
+
+
+
     let count=0;
-for(let i=1;i<=num;i++)
-  {
-    if(num%i==0)
-    {
+for(let i=1;i<=num;i++){
+    if(num%i==0){
       count++;
     }
   }
-if(count==2)
-{
-  console.log("Prime no");
+if(count==2){
+  return true;
 }
-else 
-{
-  console.log("Not Prime no")
+  
+return false;
 }
+let ans=primecheck(13);
+if(ans==true){
+console.log("prime");
+}else{
+console.log("not prime);
